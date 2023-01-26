@@ -10,10 +10,10 @@ export default {
   },
   methods:{
     getApi(){
-      axios.get(this.baseUrl + 'movies')
+      axios.get(this.baseUrl + 'posts')
       .then(result =>{
-        this.movies = result.data.movies;
-        console.log(this.movies);
+        this.projects = result.data;
+        console.log(this.projects);
       })
     }
   },
